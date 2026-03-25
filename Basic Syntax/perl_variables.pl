@@ -26,9 +26,22 @@ print("$colors[3]\n");
 pop(@colors);
 
 print("@colors\n");
-print("Array Size:". scalar @colors);
+print("Array Size:". scalar @colors. "\n");
 
 #Hashes (%) Key-Value Pairs
 #--------------------------------------------
+my %person = (
+    "name" => "Isaiah",
+    "age"  => "21",
+    "city" => "New York City"
+);
 
+print("Name: $person{'name'}\n");
+print("Age: $person{'age'}\n");
+print("City: $person{'city'}\n");
+
+$person{"job"} = "IT";
+
+print "Exists \n" if exists $person{'job'};
+delete $person{'job'};
 #--------------------------------------------
