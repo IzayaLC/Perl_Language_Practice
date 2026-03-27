@@ -51,6 +51,6 @@ print("\n");
 
 #Redo - restart current iteration - never stops
 #for (my $i = 1; $i <= 10; $i++){
-#    Redo if($i % 2 == 0);
+#    redo if($i % 2 == 0);
 #    print("$i\t");
 #}
